@@ -58,7 +58,7 @@ function App() {
             {/* without this conditiondal check the app will collapse */}
             {data.main ? (
               <h1 className="bold">
-                {(data.main.temp - 273.15).toFixed(2)} °F
+                {(data.main.temp - 273.15).toFixed(2)} °C
               </h1>
             ) : null}
           </div>
@@ -71,7 +71,7 @@ function App() {
           <div className="feels">
             {data.main ? (
               <p className="bold">
-                {(data.main.feels_like - 273.15).toFixed(2)} °F
+                {(data.main.feels_like - 273.15).toFixed(2)} °C
               </p>
             ) : null}
             <p>Feels Like</p>
